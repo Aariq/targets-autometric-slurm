@@ -56,7 +56,6 @@
       "RemoteRepo": "autometric",
       "RemoteUsername": "wlandau",
       "RemotePkgRef": "wlandau/autometric",
-      "RemoteRef": "HEAD",
       "RemoteSha": "8c1446ff045a24d1e496aa7bce080a934ae6af0b",
       "Requirements": [
         "R",
@@ -133,13 +132,11 @@
       "Package": "crew",
       "Version": "0.10.0.9001",
       "Source": "GitHub",
-      "Remotes": "wlandau/autometric",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "crew",
       "RemoteUsername": "wlandau",
       "RemotePkgRef": "wlandau/crew",
-      "RemoteRef": "HEAD",
       "RemoteSha": "71e0ae32cbeff22db3cfbdd605c98887253f417c",
       "Requirements": [
         "R",
@@ -162,6 +159,25 @@
         "utils"
       ],
       "Hash": "fbb9e3e540089205ec30dd2b06476a14"
+    },
+    "crew.cluster": {
+      "Package": "crew.cluster",
+      "Version": "0.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "crew",
+        "lifecycle",
+        "ps",
+        "rlang",
+        "utils",
+        "vctrs",
+        "xml2",
+        "yaml"
+      ],
+      "Hash": "9197dcc1be58d8f5aa2daa99111018b1"
     },
     "data.table": {
       "Package": "data.table",
@@ -459,7 +475,12 @@
     "renv": {
       "Package": "renv",
       "Version": "1.0.11",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "47623f66b4e80b3b0587bc5d7b309888"
     },
     "rlang": {
       "Package": "rlang",
@@ -614,6 +635,19 @@
         "tools"
       ],
       "Hash": "89e455b87c84e227eb7f60a1b4e5fe1f"
+    },
+    "xml2": {
+      "Package": "xml2",
+      "Version": "1.3.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "methods",
+        "rlang"
+      ],
+      "Hash": "1d0336142f4cd25d8d23cd3ba7a8fb61"
     },
     "yaml": {
       "Package": "yaml",
