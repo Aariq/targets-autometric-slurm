@@ -1,0 +1,1 @@
+log_read(list.files("worker_log_directory/", full.names = TRUE)) |> group_by(phase) |> summarize(max_ram = max(resident), max_cpu = max(cpu))
