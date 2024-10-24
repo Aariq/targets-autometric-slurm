@@ -31,14 +31,14 @@ controller_hpc <- crew_controller_slurm(
 
 group <- crew_controller_group(controller_local, controller_hpc)
 
-if (tar_active()) {
-  group$start()
-  log_start(
-    path = "log.txt",
-    seconds = 1,
-    pids = group$pids()
-  )
-}
+# if (tar_active()) {
+#   group$start()
+#   log_start(
+#     path = "log.txt",
+#     seconds = 1,
+#     pids = group$pids()
+#   )
+# }
 
 slurm_host <- Sys.getenv("SLURM_SUBMIT_HOST")
 hpc <- grepl("hpc\\.arizona\\.edu", slurm_host) & !grepl("ood", slurm_host)
